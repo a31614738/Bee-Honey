@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Bee Honey</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/22dbd1ee0c.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+
+    <!-- 返回 -->
+
+    <div class="backToTop backToTopNone" id="backToTop">
+        <a onclick="topFunction()" id="BackToTopBtn" class="pic">
+            <i class="fas fa-chevron-up"></i>
+            <img src="icon/bee.png" alt="bee">
+            <p>TOP</p>
+        </a>
+    </div>
+
+
+
+    <!-- header -->
+
+    <header>
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="image/logo_one.png" alt="logo">
+                    </a>
+                </li>
+                <li class="item"><a href="news.html">News</a></li>
+                <li class="item"><a href="product.html">Product</a></li>
+                <li class="item"><a href="course.html">Course</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item button">
+                    <a href="shop-cart.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </li>
+                <li class="item button secondary">
+                    <a href="login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="banner-box">
+            <p class="write-border-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint itaque fugit
+                repellat beatae vitae a delectus sed corporis nam ratione.</p>
+        </div>
+        <div class="banner-box-color">
+            <p class="write-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint itaque fugit repellat
+                beatae vitae a delectus sed corporis nam ratione.</p>
+        </div>
+    </section>
+
+
+
+
+    <!-- news -->
+    <div class="news" data-aos="slide-up" id="news">
+        <h1 class="heading"><span>News</span></h1>
+        <div class="news-box">
+            <div class="news-item">
+                <a href="news.html">
+                    <div class="news-image">
+                        <img src="image/66.jpg" alt="">
+                    </div>
+                    <span class="news-time">2022.10.09</span>
+                    <span class="news-text">Temporary holiday</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news.html">
+                    <div class="news-image">
+                        <img src="image/bee.jpg" alt="">
+                    </div>
+                    <span class="news-time">2022.10.10</span>
+                    <span class="news-text">first honey contest</span>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="news.html">
+                    <div class="news-image">
+                        <img src="image/honey_three.jpg" alt="">
+                    </div>
+                    <span class="news-time">2022.10.11</span>
+                    <span class="news-text">New arrivals</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="news-btn">
+            <a href="news.html" id="btn">See More →</a>
+        </div>
+
+    </div>
+
+
+
+    <!-- 產品 -->
+
+    <div class="container honey">
+
+        <h2 class="heading" data-aos="fade-up">Product</h2>
+
+        <div class="row products products-container" data-aos="fade-up">
+            <div class="col-6 col-md-3 col-lg-3 pro" id="cake">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/13.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Soap</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/canned.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Canned Honey</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/001.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Cake</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/12.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Soap</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/11.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Soap</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/001.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Cake</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/00.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Cake</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 pro">
+                <div class="products-box">
+                    <a href="details.html" class="pic">
+                        <img src="image/001.jpg" alt="honeycake">
+                    </a>
+                    <div class="content">
+                        <p>Honey Cake</p>
+                        <div class="price"> $450</div>
+                        <div class="icons">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- 自動撥放 -->
+        <section class="design" data-aos="fade-up">
+            <div class="slider">
+                <p>Good honey comes from good quality</p>
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="image/partcookie.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/22.jpg" alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/caketwo.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/bee.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/lip-balm.jpg" alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/1.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/honey_cupcakes.png" alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/coverrrr.jpg" alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/pexels-vicky-tran-3273989.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/77.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/pexels-arthur-brognoli-2260934.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/pexels-monstera-7144971.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/soup_card.jpg " alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/soup_course.jpg" alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/bee.jpg" alt="slide">
+                    </div>
+                    <div class="slide">
+                        <img src="image/bee.jpg" alt="slide">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 課程 -->
+
+        <section>
+            <div class="course-container" data-aos="fade-up">
+                <h3 class="heading">Course</h3>
+                <div class="course-project">
+                    <ul>
+                        <li class="cake-item">
+                            <a href="form.html">
+                                <span>Cake Course</span>
+                                <img src="image/cakep.jpg" alt="蛋糕課程">
+                            </a>
+                        </li>
+                        <li class="parent-item">
+                            <a href="form.html">
+                                <span>Parent Course</span>
+                                <img src="image/pexels.jpg" alt="親子課程">
+                            </a>
+                        </li>
+                        <li class="soap-item">
+                            <a href="soap-form.html">
+                                <span>Soap Course</span>
+                                <img src="image/soup_card.jpg" alt="香皂課程">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 關於 -->
+
+        <div class="about-title">
+            <h4 class="heading" data-aos="fade-up"><span>About </span></h4>
+        </div>
+        <div class="about-us" data-aos="fade-up">
+
+            <div class="about-box">
+                <div class="about-box_block">
+                    <a href="about.html">
+                        <img src="image/about.jpg" alt="about" data-aos="fade-right">
+                    </a>
+                </div>
+                <div class="about-box_block_txt">
+                    Beekeeping refers to the artificial breeding of bees to produce various products, including honey,
+                    royal
+                    jelly, pollen, propolis, beeswax, etc. <br>
+                    <br>
+                    The history of bee farming is 10,000 years old. About 9,000 years ago, North Africans began to keep
+                    bees
+                    in pottery.About 4,500 years ago, scenes of domesticated bees appeared in Egyptian art. <br>
+                    <br>
+                </div>
+                <a class="about-btn" href="about.html" id="btn">See More →</a>
+            </div>
+            <div class="white">
+                <p>Liven your living</p>
+                <a href="about.html">
+                    <img src="image/1.jpg" alt="about" data-aos="fade-left">
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- 店 -->
+
+        <div class="store-title">
+            <h5 class="heading" data-aos="fade-up"><span>Store</span></h5>
+        </div>
+        <div class="store">
+
+            <div class="store-box">
+                <div class="store-text" class="be_title" class="coll_title">
+                    <a href="#">
+                        <p class="store-title" id="store-title">STORE</p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            No. 46, Fuxing Road,<br> Zhongli District, Taoyuan City.
+                        </p>
+                    </a>
+                    <p>TEL: 02 - 2676 -1888</p>
+                    <a href="#">
+                        <p>EMAIL: apple@gmail.com</p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Opening Hours: 10:00 Am - 21:00 Pm
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 頁尾 -->
+
+        <footer>
+
+            <div class="footer-box">
+                <div class="links footer-links footernav">
+                    <h6>Quick links<div class="info"><span></span></div>
+                    </h6>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="links footer-links">
+                    <h6>other links<div class="info"><span></span></div>
+                    </h6>
+                    <div class="icon-box">
+                        <a href="#" class="icon-text"><img src="icon/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="icon/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="icon/line.png" alt="line"></a>
+                        <a href="#">
+                            <img src="icon/twitter2.png" alt="twitter">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="links footer-links">
+                    <h6>Contact info<div class="info"><span></span></div>
+                    </h6>
+                    <p>address:No. 46, Fuxing Road, Zhongli District, Taoyuan City</p> <br>
+                    <p>TEL: 02 - 2676 -1888</p> <br>
+                    <p>Opening Hours: 10:00 am - 21:00 pm</p><br>
+                    <p>EMAIL: apple@gmail.com</p><br>
+                    <p>Business Hours: Store Closed Every Monday</p><br>
+                </div>
+                <div class="credit">
+                    <p>
+                        This platform is for learning and display purposes only.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

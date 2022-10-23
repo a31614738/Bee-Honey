@@ -1,0 +1,239 @@
+/* :root {
+
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    font-style: normal;
+}
+
+img{
+    border: 0;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+:root {
+
+    --orange: #FFAC21;
+    --brown: #493323;
+    --claret: #AA6955;
+    /* 分頁title */
+    --btn: rgb(240, 235, 222);
+    /* 產品頁分類按鈕以防萬一用 */
+    --love: #FF6363;
+    /* 收藏按鈕icon */
+    --cover: #F3D996;
+    /* cover廣告背景色 */
+    --select: #92857B;
+    /* 產品詳情頁手風琴顏色 */
+    --box-shadow: .5rem .5rem 0 rgba(0, 0, 0, .1);
+    /* 用法: color:var(--love) */
+}
+
+body {
+    font-family: 'AvantGarde Md BT';
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: .3rem;
+}
+
+h2 {
+    font-size: 46px;
+    letter-spacing: .3rem;
+}
+
+h3 {
+    font-size: 44px;
+    letter-spacing: .3rem;
+}
+
+h4 {
+    font-size: 42px;
+    letter-spacing: .3rem;
+}
+
+h5 {
+    font-size: 40px;
+    letter-spacing: .3rem;
+}
+
+h6 {
+    font-size: 38px;
+    letter-spacing: .3rem;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    font-size: 22px;
+    border-radius:5px;
+    cursor: pointer;
+    border: 0;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    letter-spacing:1px;
+    font-size: 18px;
+}
+
+a {
+    letter-spacing: 1px;
+}

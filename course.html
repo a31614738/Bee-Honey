@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Appointment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/22dbd1ee0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+    <!-- 返回 -->
+
+    <div class="backToTop backToTopNone" id="backToTop">
+        <a onclick="topFunction()" id="BackToTopBtn" class="pic">
+            <i class="fas fa-chevron-up"></i>
+            <img src="icon/bee.png" alt="bee">
+            <p>TOP</p>
+        </a>
+    </div>
+
+    <!-- header -->
+    
+    <header>
+        <nav>
+            <ul class="menu">
+            <li class="logo">
+                <a href="index.html">
+                    <img src="image/logo_one.png" alt="logo">
+                </a>
+            </li>
+            <li class="item"><a href="news.html">News</a></li>
+            <li class="item"><a href="product.html">Product</a></li>
+            <li class="item"><a href="course.html" class="course">Course</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item button">
+                <a href="shop-cart.html">
+                    <i class='bx bxs-cart'></i>
+                </a>
+            </li>
+            <li class="item button secondary">
+                <a href="login.html">
+                    <i class='bx bxs-user'></i>
+                </a>
+            </li>
+            <li class="toggle">
+                <span class="bars"></span>
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+   
+    <section class="full web_title">
+        <div class="container web_title">
+            <div class="row web_title">
+                <div class="col_8 col_md_6 title">
+                    <div class="slogan" data-aos="fade-up">
+                        <h1 class="day_read">
+                            Are you ready?
+                            <br>
+                            let us
+                            <br>
+                            do handicraft together</h1>
+                    </div>
+
+                </div>
+                <div class="col_4 col_md_6 rolling_pics">
+                    <div class="left" data-aos="fade-right">
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                        <li><img src="image/bigcake.jpg" alt=""></li>
+                    </div>
+                    <div class="middle" data-aos="fade-up">
+                        <li><img src="image/Walnut Honey Cake.jpg" alt=""></li>
+                        <li><img src="image/pexels-monstera-7144971.jpg" alt=""></li>
+                        <li><img src="image/Walnut Honey Cake.jpg" alt=""></li>
+                        <li><img src="image/pexels-monstera-7144971.jpg" alt=""></li>
+                        <li><img src="image/Walnut Honey Cake.jpg" alt=""></li>
+                        <li><img src="image/pexels-monstera-7144971.jpg" alt=""></li>
+                        <li><img src="image/Walnut Honey Cake.jpg" alt=""></li>
+                        <li><img src="image/pexels-monstera-7144971.jpg" alt=""></li>
+                        <li><img src="image/Walnut Honey Cake.jpg" alt=""></li>
+                        <li><img src="image/pexels-monstera-7144971.jpg" alt=""></li>
+                        <li><img src="image/Walnut Honey Cake.jpg" alt=""></li>
+                        <li><img src="image/pexels-monstera-7144971.jpg" alt=""></li>
+                    </div>
+                    <div class="right"  data-aos="fade-left">
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                        <li><img src="image/Honeycomb.jpg" alt=""></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+   
+   
+
+    <div class="cake-container" data-aos="slide-up">
+        <div class="cake-top" data-aos="fade-up">
+            <h2>Cake Couse</h2>
+        </div>
+        <div class="cake-box">
+            <div class="course-box">
+                <div class="cake-pic">
+                    <div class="cake-img1" data-aos="flip-left">
+                        <a href="form.html">
+                            <img src="image/cakep.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="cake-img2" data-aos="flip-right">
+                        <a href="form.html">
+                            <img src="image/cakep2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="cake-content" data-aos="slide-up">
+                    <div class="cake-title">
+                        <p>Variety of cake styles</p>
+                        <p>You can choose</p>
+                        <p>Suitable for gifts and festivals</p>
+                    </div>
+                    <div class="cake-text">
+                        <p>
+                            We hope to create a baking space suitable for friends, colleagues, and family to have fun
+                            together.
+                            <br>
+                            <br>
+                            We welcome Taipei people to come here to enjoy the simple and healing time of
+                            making cakes from their busy lives.
+                            <br>
+                            <br>
+                            Dream macaron-colored cakes and exclusive recipes are the biggest features of Welcomebake.
+
+                            There are also free drinks and various photo-taking props, in order to make every guest who
+                            comes to experience cake DIY have a good time and eat with peace of mind.
+                        </p>
+                    </div>
+                    <div class="more">
+                        <a href="form.html">Reserve →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="movimg"></div>
+    <div class="movimg-3">
+        <img src="image/class.jpg" alt="">
+    </div>
+
+
+    <div class="cake-container" data-aos="slide-up">
+        <div class="cake-top">
+            <h2>Parent Couse</h2>
+        </div>
+        <div class="cake-box">
+            <div class="course-box">
+                <div class="cake-pic">
+                    <div class="cake-img1" data-aos="flip-left">
+                        <a href="form.html">
+                            <img src="image/pexels.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="cake-img2" data-aos="flip-right">
+                        <a href="form.html">
+                            <img src="image/cooking.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="cake-content" data-aos="slide-up">
+                    <div class="cake-title">
+                        <p>Variety of cake styles</p>
+                        <p>You can choose</p>
+                        <p>Suitable for gifts and festivals</p>
+                    </div>
+                    <div class="cake-text">
+                        <p>
+                            We hope to create a baking space suitable for friends, colleagues, and family to have fun
+                            together.
+                            <br>
+                            <br>
+                            We welcome Taipei people to come here to enjoy the simple and healing time of
+                            making cakes from their busy lives.
+                            <br>
+                            <br>
+                            Dream macaron-colored cakes and exclusive recipes are the biggest features of Welcomebake.
+
+                            There are also free drinks and various photo-taking props, in order to make every guest who
+                            comes to experience cake DIY have a good time and eat with peace of mind.
+                        </p>
+                    </div>
+                    <div class="more">
+                        <a href="form.html">Reserve →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="movimg-2"></div>
+    <div class="movimg-4">
+        <img src="image/classs.jpg" alt="">
+    </div>
+    
+    <div class="cake-container" data-aos="slide-up">
+        <div class="cake-top">
+            <h2>Soap Couse</h2>
+        </div>
+        <div class="cake-box">
+            <div class="course-box">
+                <div class="cake-pic">
+                    <div class="cake-img1" data-aos="flip-left">
+                        <a href="soap-form.html">
+                            <img src="image/soup_course.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="cake-img2" data-aos="flip-right">
+                        <a href="soap-form.html">
+                            <img src="image/soup_card.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="cake-content" data-aos="slide-up">
+                    <div class="cake-title">
+                        <p>Variety of cake styles</p>
+                        <p>You can choose</p>
+                        <p>Suitable for gifts and festivals</p>
+                    </div>
+                    <div class="cake-text">
+                        <p>
+                            We hope to create a baking space suitable for friends, colleagues, and family to have fun
+                            together.
+                            <br>
+                            <br>
+                            We welcome Taipei people to come here to enjoy the simple and healing time of
+                            making cakes from their busy lives.
+                            <br>
+                            <br>
+                            Dream macaron-colored cakes and exclusive recipes are the biggest features of Welcomebake.
+
+                            There are also free drinks and various photo-taking props, in order to make every guest who
+                            comes to experience cake DIY have a good time and eat with peace of mind.
+                        </p>
+                    </div>
+                    <div class="more">
+                        <a href="soap-form.html">Reserve →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 頁尾 -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <div class="links footer-links footernav">
+                    <h6>Quick links<div class="info"><span></span></div>
+                    </h6>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="links footer-links">
+                    <h6>other links<div class="info"><span></span></div>
+                    </h6>
+                    <div class="icon-box">
+                        <a href="#" class="icon-text"><img src="icon/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="icon/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="icon/line.png" alt="line"></a>
+                        <a href="#">
+                            <img src="icon/twitter2.png" alt="twitter">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="links footer-links">
+                    <h6>Contact info<div class="info"><span></span></div>
+                    </h6>
+                    <p>address:No. 46, Fuxing Road, Zhongli District, Taoyuan City</p> <br>
+                    <p>TEL: 02 - 2676 -1888</p> <br>
+                    <p>Opening Hours: 10:00 am - 21:00 pm</p><br>
+                    <p>EMAIL: apple@gmail.com</p><br>
+                    <p>Business Hours: Store Closed Every Monday</p><br>
+                </div>
+                <div class="credit">
+                    <p>
+                        This platform is for learning and display purposes only.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

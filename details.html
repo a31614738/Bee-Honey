@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/22dbd1ee0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+</head>
+
+<body>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+    <!-- 返回 -->
+
+    <div class="backToTop backToTopNone" id="backToTop">
+        <a onclick="topFunction()" id="BackToTopBtn" class="pic">
+            <i class="fas fa-chevron-up"></i>
+            <img src="icon/bee.png" alt="bee">
+            <p>TOP</p>
+        </a>
+    </div>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="image/logo_one.png" alt="logo">
+                    </a>
+                </li>
+                <li class="item"><a href="news.html">News</a></li>
+                <li class="item"><a href="product.html" class="product">Product</a></li>
+                <li class="item"><a href="course.html">Course</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item button">
+                    <a href="shop-cart.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </li>
+                <li class="item button secondary">
+                    <a href="login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container details">
+        <div class="details-box">
+            <div class="details-item">
+                <div class="details-pic">
+                    <div class="details-img">
+                        <img src="image/00.jpg" id="large" class="large">
+                        <div class="details-small" id="smallPanel">
+                            <ul>
+                                <li><img src="image/00.jpg" class="small" onclick="choose(1)"></li>
+                                <li><img src="image/002.jpg" class="small" onclick="choose(2)"></li>
+                                <li><img src="image/00.jpg" class="small" onclick="choose(3)"></li>
+                                <li><img src="image/002.jpg" class="small" onclick="choose(4)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h1>Honey Cake
+                            <button id="like">
+                                <img src="icon/heart.png" alt="">
+                            </button>
+                        </h1>
+                        <p>
+                            100% pure honey and added spices ,
+                            Pure milk as raw material to make soap
+                            Great for gift giving or self use!
+                        </p>
+                        <div class="price">$450</div>
+                        <div class="num">
+                            <div class="num-box">
+                                <p>Quantity:</p>
+                            </div>
+                            <div class="quantity">
+                                <input type="button" class="btnMinus" value=" − ">
+                                <input type="text" class="qty" size="4" value="0">
+                                <input type="button" class="btnPlus" value="  + ">
+                            </div>
+                        </div>
+
+                        <div class="btns">
+                            <a href="#" id="btn" calss="btn">add to cart</a>
+                            <a href="#" id="btns" calss="btn">Buy now</a>
+                        </div>
+                        <div class="promotions">
+                            <span>Promotions: <br></span>
+                            <p>
+                                Free Shipping Over 1000: <br>
+                                Use 7-11 pick up and pay to send to Taiwan,<br>
+                                free shipping over NT$1000
+                            </p>
+                            <span>payment method: <br></span>
+                            <p>
+                                line pay、ATM virtual account
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <div id="accordion" class="accordion">
+                <div class="accordion-box">
+                    <a href="#" class="accordion-header active-accordion">Suitable:</a>
+                    <div class="accordion-content" id="acrd_1" style="display:block">
+                        <div class="accordion-content-flex">
+                            &nbsp;"All Skin Types" <br>
+                            &bull;&nbsp;Likes to use soap bathers.
+                            &bull; &nbsp;Capacity: 250 grams <br>
+                            &bull; &nbsp;Gently rubbing, there is a dense foam <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <a href="#" class="accordion-header">texture features:</a>
+                    <div class="accordion-content" id="acrd_2">
+                        <div class="accordion-content-flex">
+                            &bull; &nbsp;Capacity: 250 grams <br>
+                            &bull; &nbsp;Gently rubbing, there is a dense foam <br>
+                            &bull; &nbsp;just the right cleaning power <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <a href="#" class="accordion-header">Product Information:</a>
+                    <div class="accordion-content" id="acrd_3">
+                        <div class="accordion-content-flex">
+                            &bull; &nbsp;Capacity: 250 grams <br>
+                            &bull; &nbsp;Validity period: 3 years <br>
+                            &bull; &nbsp;This product is covered by a 2-year satisfaction guarantee
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2> Plus purchase </h2>
+        <div class="container more">
+            <div class="more-box">
+                <div class="more-item">
+
+                    <ul>
+                        <li>
+                            <a href="details.html">
+                                <img src="image/00.jpg" alt="">
+                            </a>
+                            <p>Honey Cake</p>
+                            <p>$450</p>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img src="image/00.jpg" alt="">
+                            </a>
+                            <p>Honey Cake</p>
+                            <p>$450</p>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img src="image/00.jpg" alt="">
+                            </a>
+                            <p>Honey Cake</p>
+                            <p>$450</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var accordion = document.getElementById("accordion");
+            var tabs_menu = accordion.getElementsByClassName("accordion-header");
+            for (var k = 0; k < tabs_menu.length; k++) {
+                tabs_menu[k].onclick = js_accordion;
+            }
+            function js_accordion() {
+                var tabs_panel = accordion.getElementsByClassName("accordion-content");
+                for (var i = 0; i < tabs_panel.length; i++) {
+                    tabs_panel[i].style.display = "none";
+                    tabs_panel[i].classList.remove("animation_acrd", "fadeInDown");
+                }
+                for (var j = 0; j < tabs_menu.length; j++) {
+                    tabs_menu[j].classList.remove("active-accordion");
+                }
+                this.classList.add("active-accordion");
+                var content = this.nextElementSibling;
+                content.classList.add("animation_acrd", "fadeInDown");
+                content.style.display = "block";
+                return false;
+            }
+        })();
+    </script>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-box">
+                <div class="links footer-links footernav">
+                    <h6>Quick links<div class="info"><span></span></div>
+                    </h6>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="links footer-links">
+                    <h6>other links<div class="info"><span></span></div>
+                    </h6>
+                    <div class="icon-box">
+                        <a href="#" class="icon-text"><img src="icon/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="icon/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="icon/line.png" alt="line"></a>
+                        <a href="#">
+                            <img src="icon/twitter2.png" alt="twitter">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="links footer-links">
+                    <h6>Contact info<div class="info"><span></span></div>
+                    </h6>
+                    <p>address:No. 46, Fuxing Road, Zhongli District, Taoyuan City</p> <br>
+                    <p>TEL: 02 - 2676 -1888</p> <br>
+                    <p>Opening Hours: 10:00 am - 21:00 pm</p><br>
+                    <p>EMAIL: apple@gmail.com</p><br>
+                    <p>Business Hours: Store Closed Every Monday</p><br>
+                </div>
+                <div class="credit">
+                    <p>
+                        This platform is for learning and display purposes only.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

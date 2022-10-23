@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/22dbd1ee0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        $(function () {
+
+            $(".toggle").on("click", function () {
+
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            })
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+    <!-- 返回 -->
+
+    <div class="backToTop backToTopNone" id="backToTop">
+        <a onclick="topFunction()" id="BackToTopBtn" class="pic">
+            <i class="fas fa-chevron-up"></i>
+            <img src="icon/bee.png" alt="bee">
+            <p>TOP</p>
+        </a>
+    </div>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="image/logo_one.png" alt="logo">
+                    </a>
+                </li>
+                <li class="item"><a href="news.html" class="news">News</a></li>
+                <li class="item"><a href="product.html">Product</a></li>
+                <li class="item"><a href="course.html">Course</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item button">
+                    <a href="shop-cart.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </li>
+                <li class="item button secondary">
+                    <a href="login.html">
+                        <i class='bx bxs-user user'></i>
+                    </a>
+                </li>
+                <li class="toggle">
+                    <span class="bars"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container login">
+
+            <div class="user singinBx">
+                <div class="imgBx">
+                    <img src="image/login.jpg" alt="">
+                </div>
+                <div class="formBx">
+                    <form action="">
+                        <h1>SIGN IN</h1>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <p class="signup">Don't have an account?<a href="#" onclick="toggleForm();">Sign Up.</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user singupBx">
+                <div class="formBx">
+                    <form action="">
+                        <h2>Creatn an account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="eamil" placeholder="Email">
+                        <input type="password" placeholder="Create Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">Already have an account?<a href="#" onclick="toggleForm();">Sign In.</a></p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <img src="image/login2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleForm() {
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 頁尾 -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <div class="links footer-links footernav">
+                    <h6>Quick links<div class="info"><span></span></div>
+                    </h6>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="links footer-links">
+                    <h6>other links<div class="info"><span></span></div>
+                    </h6>
+                    <div class="icon-box">
+                        <a href="#" class="icon-text"><img src="icon/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="icon/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="icon/line.png" alt="line"></a>
+                        <a href="#">
+                            <img src="icon/twitter2.png" alt="twitter">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="links footer-links">
+                    <h6>Contact info<div class="info"><span></span></div>
+                    </h6>
+                    <p>address:No. 46, Fuxing Road, Zhongli District, Taoyuan City</p> <br>
+                    <p>TEL: 02 - 2676 -1888</p> <br>
+                    <p>Opening Hours: 10:00 am - 21:00 pm</p><br>
+                    <p>EMAIL: apple@gmail.com</p><br>
+                    <p>Business Hours: Store Closed Every Monday</p><br>
+                </div>
+                <div class="credit">
+                    <p>
+                        This platform is for learning and display purposes only.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

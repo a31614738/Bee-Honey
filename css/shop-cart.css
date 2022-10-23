@@ -1,0 +1,343 @@
+.fa-bars:before,
+.fa-navicon:before {
+    display: none;
+    opacity: 0;
+}
+.heading {
+    color: var(--claret);
+    text-align: center;
+    margin: 80px 0;
+    position: relative;
+}
+input:focus::placeholder {
+    opacity: 0;
+}
+i.cart {
+    color: var(--orange);
+}
+
+/*header*/
+nav {
+    background-color: rgba(255, 255, 255, 0.01);
+    /* backdrop-filter: blur(5px); */
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+nav.sticky {
+    box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+    background-color: rgb(255,249,233,.8);
+}
+@media screen and (max-width:576px) {
+    nav.sticky {
+        box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, .1);
+        backdrop-filter: blur(5px);
+        background-color: rgb(255,249,233,.9);
+    }
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 20px;
+    padding: 10px 0;
+    color: var(--brown);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--orange);
+}
+
+.menu li a {
+    padding: 15px 5px;
+    display: block;
+}
+
+.logo img{
+    width: 110px;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.button i {
+    font-size: 25px;
+}
+.toggle {
+    order: 1;
+}
+
+.items.button {
+    order: 2;
+}
+
+.items {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    margin: 0 5px;
+    display: none;
+}
+
+.items.active {
+    display: block;
+}
+
+.toggle {
+    margin-left: 5px;
+    margin-top: -12px;
+    cursor: pointer;
+}
+
+.bars {
+    background-color: var(--brown);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before,
+.bars::after {
+    background-color: var(--brown);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/*手機*/
+
+@media screen and (min-width:330px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .items.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all .25s;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .items {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .items {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+}
+
+
+/*購物車*/
+
+.container  {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table thead {
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px) {
+    #cart-container table{
+        
+        display: block;
+    }
+    #cart-container table thead {
+        display: block;
+    }
+    
+}
+
+#cart-container table thead td {
+    background-color: var(--claret);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 6px 0;
+}
+@media screen and (max-width:576px) {
+    #cart-container table thead td{
+        font-size: 12px;
+    }
+
+}
+button.coupons {
+    width: 195px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--select);
+}
+button:hover {
+    background-color: #70635a;
+}
+input {
+    width: 20%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-family: 'AvantGarde Md BT';
+}
+#cart-container table td {
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align:middle;
+}
+#cart-container table td:nth-child(1){
+    width: 170px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+    width: 200px;
+}
+
+#cart-container table td:nth-child(4)
+{
+    width: 170px;
+}
+
+
+#cart-container table tbody img{
+    width: 80px;
+    height: 80px;
+    margin: 5px 0;
+    object-fit: cover;
+}
+
+#cart-container table tbody i {
+    font-size: 30px;
+    color:var(--select);
+}
+
+
+
+/***/
+#cart-bottom {
+    margin-top: 30px;
+}
+#cart-bottom .coupon>div,
+#cart-bottom .total>div{
+    border: 1px solid #ccc;
+}
+#cart-bottom .coupon .name,
+#cart-bottom .total .names{
+    background-color:var(--claret);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+#cart-bottom .coupon .small {
+    color: var(--select);
+    margin: 15px 0;
+}
+#cart-bottom .coupon input {
+    border-radius: 5px;
+}
+#cart-bottom .coupon .small,
+#cart-bottom .coupon input
+{
+    padding: 0 12px; 
+}
+#cart-bottom .coupon input {
+    width: 200px;
+    height: 40px;
+}
+#cart-bottom .coupon input,
+#cart-bottom .coupon button {
+    margin: 0 0 20px 12px ;
+}
+#cart-bottom .total div>div {
+    padding: 0 12px;
+}
+#cart-bottom .total .totals {
+    color: var(--select);
+    margin: 10px 0;
+}
+#cart-bottom .total .d-flex .price {
+    color: var(--select);
+    margin-top: 10px;
+}
+.second-hr {
+    width: 40px;
+    margin: 12px;
+    border: 2px solid var(--claret);
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+#cart-bottom .total div>button {
+    display: flow-root;
+    margin: 15px auto;
+}
+@media screen and (max-width:576px) {
+    #cart-container table tbody i  {
+        font-size: 20px;
+    }
+    
+}

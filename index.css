@@ -1019,3 +1019,331 @@ p.write-font{
 
 
 
+/*loading*/
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000000;
+    background-color: #f3ec8b;
+}
+
+
+.loading-box {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.bee {
+    background-color: #fcf8bb;
+    border: 1px solid rgb(169, 149, 102);
+    height: 180px;
+    width: 140px;
+    border-radius: 65px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: repeating-linear-gradient(180deg, transparent 0, transparent 30px, rgb(154, 124, 95) 10px, rgb(154, 124, 95) 50px);
+    background-position: 0 27px;
+    animation: jump 0.8s infinite;
+    animation-fill-mode: forwards;
+}
+
+.bee::before,
+.bee::after {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 32px;
+    background-color: #fcf8bb;
+    border: 1px solid rgb(169, 149, 102);
+    top: 25px;
+    z-index: -1;
+    transform-origin: bottom;
+    border-radius: 25px;
+}
+
+.bee::before {
+    left: 10px;
+    transform: rotate(-50deg);
+    animation: hand-l 0.5s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hand-l {
+    50% {
+        transform: rotate(-42deg);
+    }
+}
+
+.bee::after {
+    right: 10px;
+    transform: rotate(50deg);
+    animation: hand-r 0.5s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hand-r {
+    50% {
+        transform: rotate(42deg);
+    }
+}
+
+.antenna {
+    background-color: rgb(139, 107, 75);
+    height: 70px;
+    width: 5px;
+    /* border-radius:90% 6% 93% 5%; */
+    transform: rotate3d(30px);
+    position: absolute;
+    top: -40px;
+    z-index: -1;
+    margin: auto;
+    left: 0;
+    right: -75px;
+}
+
+.antenna::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(255, 239, 208);
+    border: 1px solid rgb(169, 149, 102);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    top: -5px;
+    left: -5px;
+}
+
+.antenna,
+.antenna::before {
+    transform: rotate(40deg);
+    animation: antenna .8s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes antenna {
+    50% {
+        transform: rotate(45deg);
+    }
+}
+
+.antennas {
+    background-color: rgb(139, 107, 75);
+    height: 70px;
+    width: 5px;
+    /* border-radius:90% 6% 93% 5%; */
+    position: absolute;
+    top: -40px;
+    z-index: -1;
+    margin: auto;
+    left: -130px;
+    right: -75px;
+}
+
+.antennas::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(255, 239, 208);
+    border: 1px solid rgb(169, 149, 102);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    top: -5px;
+    left: -5px;
+}
+
+.antennas,
+.antennas::before {
+    transform: rotate(-40deg);
+    animation: antennas .8s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes antennas {
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+
+.wing {
+    position: absolute;
+    left: -45px;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 0 50% 50%;
+    transform: rotate(125deg);
+    background-color: rgb(195, 238, 255);
+    z-index: -3;
+    border: .5px solid rgb(42, 164, 220);
+}
+
+.wing::before {
+    position: absolute;
+    content: "";
+    left: 40px;
+    bottom: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 0 50% 50%;
+    transform: rotate(-35deg);
+    background-color: rgb(195, 238, 255);
+    z-index: -3;
+    border: .5px solid rgb(42, 164, 220);
+}
+
+.wings {
+    position: absolute;
+    right: -45px;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 0 50% 50%;
+    transform: rotate(-35deg);
+    background-color: rgb(195, 238, 255);
+    z-index: -3;
+    border: .5px solid rgb(42, 164, 220);
+}
+
+.wings::before {
+    position: absolute;
+    content: "";
+    left: -38px;
+    bottom: -40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 0 50% 50%;
+    transform: rotate(-35deg);
+    background-color: rgb(195, 238, 255);
+    z-index: -3;
+    border: .5px solid rgb(42, 164, 220);
+}
+
+.leg-left,
+.leg-right {
+    height: 80px;
+    width: 32px;
+    background-color: #fcf8bb;
+    border: 1px solid rgb(169, 149, 102);
+    border-radius: 25px;
+    position: absolute;
+    top: 130px;
+    z-index: -1;
+}
+
+.leg-left {
+    left: 22px;
+    animation: legs 1s infinite;
+    animation-fill-mode: forwards;
+}
+
+.leg-right {
+    right: 22px;
+    animation: legs 1s 0.3s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes legs {
+    50% {
+        transform: translateY(-1px);
+    }
+}
+
+.eyes-left,
+.eyes-right {
+    background-color: rgb(123, 92, 60);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    animation: blink 1s infinite;
+    animation-fill-mode: forwards;
+}
+
+.eyes-left {
+    left: 32px;
+}
+
+.eyes-right {
+    right: 32px;
+}
+
+@keyframes blink {
+    20% {
+        transform: scaleY(0.3);
+    }
+
+    25% {
+        transform: scaleY(1);
+    }
+
+}
+
+.mouth {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 136, 136);
+    border: 1px solid rgb(156, 40, 40);
+    border-radius: 0 0 35px 35px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 32px;
+}
+
+
+
+
+@keyframes jump {
+    50% {
+        top: 85px;
+    }
+}
+
+.shadow {
+    position: relative;
+    height: 30px;
+    width: 160px;
+    background-color: rgba(30, 30, 30, 0.157);
+    border-radius: 50%;
+    position: absolute;
+    top: 290px;
+    z-index: -2;
+    margin: auto;
+    left: 0;
+    right: 0;
+    animation: shadow .8s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shadow {
+    50% {
+        transform: scaleX(1.2);
+    }
+}
+
+.shadow p {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+    font-size: 30px;
+    color: rgb(140, 106, 71);
+
+}

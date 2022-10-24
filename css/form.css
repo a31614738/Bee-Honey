@@ -5,8 +5,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    background-image: linear-gradient(rgba(60, 59, 59, 0.6),rgba(65, 63, 63, 0.6)),
-    url(image/formbgc3.jpg);
+    /* background-image: linear-gradient(rgba(60, 59, 59, 0.6),rgba(65, 63, 63, 0.6)),
+    url(image/formbgc3.jpg); */
+    background-image:url(image/formbgc3.jpg) ;
 }
 .fa-bars:before,
 .fa-navicon:before {

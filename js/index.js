@@ -83,10 +83,3 @@ window.addEventListener("load", function () {
 })
 
 
-// loading
-
-$(document).ready(function(){
-    setTimeout(function(){
-        $(".loading").fade0ut(500);
-    },1500);
-})

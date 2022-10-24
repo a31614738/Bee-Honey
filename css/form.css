@@ -379,7 +379,7 @@ nav a:hover {
 
 .card .open {
     font-size: 20px;
-    color: #fff;
+    color: var(--brown);
     animation: open 4s infinite;
 }
 

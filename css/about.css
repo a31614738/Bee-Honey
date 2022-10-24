@@ -100,7 +100,7 @@
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(163, 163, 163, 0.8),rgba(65, 63, 63, 0.8)),url(/image/pexels-monstera-7144971.jpg);
+    background-image: linear-gradient(rgba(163, 163, 163, 0.8),rgba(65, 63, 63, 0.8)),url(image/pexels-monstera-7144971.jpg);
     backdrop-filter: blur(10px);
 }
 

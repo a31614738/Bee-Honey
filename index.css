@@ -75,7 +75,7 @@ body {
     position: relative;
     width: 50%;
     opacity: 0.8;
-    background-image: url(/image/ban3.jpg);
+    background-image: url(image/ban3.jpg);
     background-size: cover;
     overflow: hidden;
 }

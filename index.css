@@ -132,7 +132,7 @@ p.write-font{
     .banner .banner-box:nth-child(1) {
         position: relative;
         width: 70%;
-        background-image: url(/image/ban3.jpg);
+        background-image: url(image/ban3.jpg);
         background-size: cover;
         overflow: hidden;
     }
@@ -156,7 +156,7 @@ p.write-font{
     .banner .banner-box:nth-child(1) {
         position: relative;
         width: 95%;
-        background-image: url(/image/ban3.jpg);
+        background-image: url(image/ban3.jpg);
         background-size: cover;
         overflow: hidden;
     }

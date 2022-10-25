@@ -100,7 +100,7 @@
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(163, 163, 163, 0.8),rgba(65, 63, 63, 0.8)),url(image/pexels-monstera-7144971.jpg);
+    /* background-image: linear-gradient(rgba(251, 215, 153, 0.551),rgba(227, 170, 48, 0.594)),url(image/pexels-monstera-7144971.jpg); */
     backdrop-filter: blur(10px);
 }
 
@@ -108,8 +108,6 @@
     width: 400px;
     height: 470px;
     margin: 35px auto;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 230, 205, 0.2);
 }
 .pics-img {
     position: relative;
@@ -149,7 +147,7 @@
 }
 .pics-img h3 {
     font-size: 35px;
-    color: #fff;
+    color: var(--brown);
 }
 
 .pics-txt h3{
